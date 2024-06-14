@@ -1,6 +1,7 @@
 # src/cells/seed_cell.py
 
 from src.cells.base_cell import BaseCell
+from src.cells.brain_cell import BrainCell
 
 
 class SeedCell(BaseCell):
@@ -56,7 +57,6 @@ class SeedCell(BaseCell):
         """
         # Implement the logic for transforming this cell into a BrainCell.
         # Assuming there is a BrainCell class that we can import and use.
-        from .brain_cell import BrainCell
 
         new_brain_cell = BrainCell(self.position, self.energy, self.genome)
         # Additional logic might be required to replace this cell in the grid structure
